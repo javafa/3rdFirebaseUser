@@ -13,10 +13,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserAdapter extends BaseAdapter {
-    List<User> data = new ArrayList<>();
+    List<User> data;
     LayoutInflater inflater;
 
     public UserAdapter(Context context){
+        data = new ArrayList<>();
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 

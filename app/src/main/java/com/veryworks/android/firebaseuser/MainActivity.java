@@ -1,8 +1,10 @@
 package com.veryworks.android.firebaseuser;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -52,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void signUp(View view){
+        Intent intent = new Intent(this,SignupActivity.class);
+        startActivity(intent);
     }
 
     // 파이어베이스의 valueEventListener 에서 호출
